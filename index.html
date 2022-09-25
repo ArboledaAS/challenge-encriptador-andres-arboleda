@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incriptador ARBOLEDA</title>
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="imagenes/Vector-a.svg" alt="Logo de alura">
+    </header>
+
+    <main>
+        
+        <section class="seccion1">
+            <div>
+                <textarea class="caja-texto" placeholder="Ingrese el texto aqui" onkeypress="return check(event)"></textarea>
+                <div class="info">
+                    <img src="imagenes/informacion.svg">
+                    <p id="advertencia">Solo letras minúsculas y sin acentos</p>
+                </div>
+
+                <div class="contenedor-btn">
+                    <button class="btn-encriptar" onclick="btnEncriptar()" >Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+                
+            </div>
+        </section>
+
+
+    
+        <section class="seccion2">
+            
+            
+            <div id="probandop">
+
+                <div class="contenedor-resultado">
+                    <textarea disabled class="resultado-texto"></textarea>
+                </div>
+
+                <div id="textonoresuelto" class="h3-dibujo">
+                    <h3>Ningún mensaje fue encontrado</h3>
+                </div>
+    
+                <div id="textonoresuelto2"  class="h4-dibujo">
+                    <h4>Ingresa el texto que deseas encriptar o desencriptar.</h4>
+                </div>
+    
+                <div class="contenerdor-copiar">
+                    <button class="btn-copiar" onclick="copiar()">Copiar</button>
+                </div>
+
+            </div>
+
+            
+
+        </section>
+    </main>
+
+    <footer class="caja-yo">
+        <p class="yo">&copy Created by <a href="https://github.com/ArboledaAS" target="_blank" rel="noopener noreferrer">Andrés Arboleda</a> </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
